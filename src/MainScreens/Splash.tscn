@@ -1,5 +1,54 @@
-[gd_scene format=1]
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://src/MainScreens/Splash.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/splash.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/Backgrounds/black.png" type="Texture" id=3]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "show"
+length = 3.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("BlackImg:visibility/opacity")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 1.0 ] }
 
 [node name="Splash" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="SplashImg" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+centered = false
+
+[node name="BlackImg" type="Sprite" parent="."]
+
+transform/scale = Vector2( 128, 72 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="TimeSplash" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/show = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "show"
+
+[connection signal="timeout" from="TimeSplash" to="." method="_on_TimeSplash_timeout"]
 
 
