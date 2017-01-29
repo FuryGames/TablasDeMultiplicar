@@ -8,8 +8,5 @@ func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
 	pass
-	
 func Disable():
 	self.set_disabled(true)
-	
-
