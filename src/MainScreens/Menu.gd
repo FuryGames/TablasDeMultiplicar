@@ -8,3 +8,6 @@ func _on_Exit_pressed():
 
 func _on_Team_pressed():
 	get_tree().change_scene("res://src/MainScreens/Credits.tscn")
+
+func _on_Tables_pressed():
+	get_tree().change_scene("res://src/MainScreens/Tables.tscn")

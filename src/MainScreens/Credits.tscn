@@ -1,5 +1,9 @@
-[gd_scene format=1]
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://src/Parallax/MenuBackground.tscn" type="PackedScene" id=1]
 
 [node name="Credits" type="Node2D"]
+
+[node name="MenuBackground" parent="." instance=ExtResource( 1 )]
 
 
