@@ -1,0 +1,93 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://assets/images/buttons/tablas/volver-normal.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/buttons/tablas/volver-press.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/Lobster/Lobster-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 50
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 3 )
+
+[node name="LevelTemplate" type="Node2D"]
+
+[node name="ExitLevel" type="TextureButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 20.0
+margin/top = 20.0
+margin/right = 113.0
+margin/bottom = 113.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 1 )
+textures/pressed = ExtResource( 2 )
+params/scale = Vector2( 0.6, 0.6 )
+
+[node name="Correct" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 170.0
+margin/top = 0.0
+margin/right = 520.0
+margin/bottom = 120.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.198303, 0.241573, 0.890625, 1 )
+custom_colors/font_color_shadow = Color( 0.295898, 0.313637, 0.75, 1 )
+text = "Correctas: 99"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Incorrect" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 530.0
+margin/top = 0.0
+margin/right = 880.0
+margin/bottom = 120.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.198303, 0.241573, 0.890625, 1 )
+custom_colors/font_color_shadow = Color( 0.295898, 0.313637, 0.75, 1 )
+text = "Incorrectas: 99"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Stay" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 890.0
+margin/top = 0.0
+margin/right = 1240.0
+margin/bottom = 120.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.198303, 0.241573, 0.890625, 1 )
+custom_colors/font_color_shadow = Color( 0.295898, 0.313637, 0.75, 1 )
+text = "Quedan: 99"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
