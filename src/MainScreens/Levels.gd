@@ -1,10 +1,11 @@
-extends Panel
+extends Node2D
 
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
+
 const CNIVELES = 5 #cantidad de niveles
-var niveles=[1,1,0,0,0]#1 para nivel desbloqueado, 0 para nivel bloqueado
+var niveles=[1,1,0,1,0]#1 para nivel desbloqueado, 0 para nivel bloqueado
 
 func _ready():
 	Check_completed_lvls()
@@ -33,4 +34,4 @@ func _on_TextureButton1_pressed():
 	pass
 		#get_tree().change_scene("res://src/Levels/Level1.tscn")
 func _on_boton_reiniciar_pressed():
-	Reset_lvls() # replace with function body
+	Reset_lvls()
