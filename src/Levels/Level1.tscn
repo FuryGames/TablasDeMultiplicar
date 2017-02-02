@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://src/Levels/Level1.gd" type="Script" id=1]
@@ -290,5 +291,10 @@ process_mode = 1
 wait_time = 1.0
 one_shot = false
 autostart = false
+=======
+[gd_scene format=1]
+
+[node name="Level1" type="Node2D"]
+>>>>>>> origin/master
 
 

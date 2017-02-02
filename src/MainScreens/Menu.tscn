@@ -132,6 +132,8 @@ textures/normal = ExtResource( 8 )
 
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
 
+[connection signal="pressed" from="Tables" to="." method="_on_Tables_pressed"]
+
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
 
 [connection signal="pressed" from="Team" to="." method="_on_Team_pressed"]
