@@ -259,8 +259,8 @@ playback/speed = 1.0
 blend_times = [  ]
 autoplay = "botones 2"
 
-[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]
-
 [connection signal="pressed" from="volver" to="MenuBackground" method="_on_volver_pressed"]
+
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]
 
 
