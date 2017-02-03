@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=1]
+[gd_scene load_steps=15 format=1]
 
 [ext_resource path="res://src/MainScreens/Levels.gd" type="Script" id=1]
 [ext_resource path="res://src/Parallax/MenuBackground.tscn" type="PackedScene" id=2]
@@ -7,7 +7,11 @@
 [ext_resource path="res://assets/images/buttons/btn-disable.png" type="Texture" id=5]
 [ext_resource path="res://src/Singletons/tbutton1levels.gd" type="Script" id=6]
 [ext_resource path="res://assets/fonts/Pacifico/Pacifico-Regular.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://src/MainScreens/Levels.tres" type="Animation" id=8]
+[ext_resource path="res://assets/images/buttons/button-normal.png" type="Texture" id=8]
+[ext_resource path="res://assets/fonts/IndieFlower/IndieFlower.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://src/MainScreens/Levels.tres" type="Animation" id=10]
+[ext_resource path="res://assets/images/buttons/tablas/volver-press.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/buttons/tablas/volver-normal.png" type="Texture" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -17,17 +21,12 @@ font/use_filter = false
 font/font = ExtResource( 7 )
 fallback/0 = ExtResource( 7 )
 
-[sub_resource type="DynamicFontData" id=2]
+[sub_resource type="DynamicFont" id=2]
 
-font_path = "res://assets/fonts/Pacifico/Pacifico-Regular.ttf"
-
-[sub_resource type="DynamicFont" id=3]
-
-font/size = 36
+font/size = 40
 font/use_mipmaps = false
 font/use_filter = false
-font/font = SubResource( 2 )
-fallback/0 = ExtResource( 7 )
+font/font = ExtResource( 9 )
 
 [node name="Levels" type="Node2D"]
 
@@ -53,6 +52,7 @@ shortcut = null
 textures/normal = ExtResource( 3 )
 textures/pressed = ExtResource( 4 )
 textures/disabled = ExtResource( 5 )
+params/scale = Vector2( 0.1, 0.1 )
 params/modulate = Color( 0.965149, 0.975902, 0.984375, 1 )
 script/script = ExtResource( 6 )
 
@@ -89,6 +89,7 @@ shortcut = null
 textures/normal = ExtResource( 3 )
 textures/pressed = ExtResource( 4 )
 textures/disabled = ExtResource( 5 )
+params/scale = Vector2( 0.1, 0.1 )
 params/modulate = Color( 0.965149, 0.975902, 0.984375, 1 )
 script/script = ExtResource( 6 )
 
@@ -125,6 +126,7 @@ shortcut = null
 textures/normal = ExtResource( 3 )
 textures/pressed = ExtResource( 4 )
 textures/disabled = ExtResource( 5 )
+params/scale = Vector2( 0.1, 0.1 )
 params/modulate = Color( 0.965149, 0.975902, 0.984375, 1 )
 script/script = ExtResource( 6 )
 
@@ -161,6 +163,7 @@ shortcut = null
 textures/normal = ExtResource( 3 )
 textures/pressed = ExtResource( 4 )
 textures/disabled = ExtResource( 5 )
+params/scale = Vector2( 0.1, 0.1 )
 params/modulate = Color( 0.965149, 0.975902, 0.984375, 1 )
 script/script = ExtResource( 6 )
 
@@ -197,6 +200,7 @@ shortcut = null
 textures/normal = ExtResource( 3 )
 textures/pressed = ExtResource( 4 )
 textures/disabled = ExtResource( 5 )
+params/scale = Vector2( 0.1, 0.1 )
 params/modulate = Color( 0.965149, 0.975902, 0.984375, 1 )
 script/script = ExtResource( 6 )
 
@@ -217,34 +221,68 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="boton_reiniciar" type="Button" parent="."]
+[node name="boton_reiniciar" type="TextureButton" parent="."]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 603.0
-margin/top = 249.0
-margin/right = 920.0
-margin/bottom = 342.0
-custom_fonts/font = SubResource( 3 )
+margin/left = 631.0
+margin/top = 424.0
+margin/right = 977.0
+margin/bottom = 564.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Reiniciar niveles"
-flat = false
+textures/normal = ExtResource( 8 )
+params/scale = Vector2( 0.8, 0.8 )
+params/modulate = Color( 0.387543, 0.745843, 0.972656, 1 )
+
+[node name="Label" type="Label" parent="boton_reiniciar"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 41.0
+margin/top = 35.0
+margin/right = 371.0
+margin/bottom = 108.0
+custom_fonts/font = SubResource( 2 )
+text = "Reiniciar Niveles"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/animacionlevels = ExtResource( 8 )
+anims/animacionlevels = ExtResource( 10 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = "animacionlevels"
 
+[node name="TextureButton" type="TextureButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -254.0
+margin/top = 414.0
+margin/right = -93.0
+margin/bottom = 569.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 11 )
+textures/pressed = ExtResource( 12 )
+
 [connection signal="pressed" from="boton_reiniciar" to="." method="_on_boton_reiniciar_pressed"]
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 
 
