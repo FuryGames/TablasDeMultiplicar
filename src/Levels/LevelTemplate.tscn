@@ -242,4 +242,10 @@ __meta__ = { "_edit_lock_":true }
 
 [connection signal="pressed" from="ExitLevel" to="." method="_on_ExitLevel_pressed"]
 
+[connection signal="pressed" from="Opt1" to="." method="_on_Opt1_pressed"]
+
+[connection signal="pressed" from="Opt2" to="." method="_on_Opt2_pressed"]
+
+[connection signal="pressed" from="Opt3" to="." method="_on_Opt3_pressed"]
+
 

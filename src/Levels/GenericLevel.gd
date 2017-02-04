@@ -48,3 +48,11 @@ func generate_answers():
 			opts[index_num] = falt[index_falt]
 			index_falt += 1
 		index_num += 1
+
+func evaluate_result(opt):
+	if opt == result:
+		Global.current_correct += 1
+	else:
+		Global.current_incorrect += 1
+	Global.current_stay -= 1
+	Global.reset_opt()
