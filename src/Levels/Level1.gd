@@ -42,7 +42,7 @@ func _process(delta):
 	
 	if Global.current_stay == 0 and end_level_one_time:
 		end_level_one_time = false
-		print("End Level")
+		get_tree().change_scene("res://src/Levels/EndLevel.tscn")
 
 func display_problem():
 	display.set_text(str(num1, " * ", num2))
