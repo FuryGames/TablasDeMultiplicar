@@ -9,7 +9,6 @@ func _ready():
 		get_node("Sound").set_pressed_texture(sonido_on)
 		get_node("SoundMenu").stop()
 	
-
 func _on_Start_pressed():
 	get_tree().change_scene("res://src/MainScreens/Levels.tscn")
 
@@ -17,12 +16,10 @@ func _on_Exit_pressed():
 	get_tree().quit()
 
 func _on_Team_pressed():
-	
 	get_tree().change_scene("res://src/MainScreens/Credits.tscn")
 
 func _on_Tables_pressed():
 	get_tree().change_scene("res://src/MainScreens/Tables.tscn")
-
 
 func _on_Sound_pressed():
 	
