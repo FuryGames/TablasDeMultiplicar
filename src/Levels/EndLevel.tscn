@@ -160,4 +160,8 @@ playback/speed = 1.0
 blend_times = [  ]
 autoplay = "show"
 
+[connection signal="pressed" from="Resume" to="." method="_on_Resume_pressed"]
+
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]
+
 

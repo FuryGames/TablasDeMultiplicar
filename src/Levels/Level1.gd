@@ -10,9 +10,11 @@ onready var stay = get_node("LevelTemplate/Stay")
 
 var opt_one_time = true
 var end_level_one_time = true
+var game_over_one_time = true
 
 func _ready():
-	set_table(1) # setiar la tabla del 1
+	set_table(1) # setiar la tabla del 1}
+	Global.current_level = 1
 	Global.current_correct = 0
 	Global.current_incorrect = 0
 	Global.current_stay = 20
@@ -43,6 +45,10 @@ func _process(delta):
 	if Global.current_stay == 0 and end_level_one_time:
 		end_level_one_time = false
 		get_tree().change_scene("res://src/Levels/EndLevel.tscn")
+		
+	if Global.current_incorrect >= 3 and game_over_one_time:
+		game_over_one_time = false
+		get_tree().change_scene("res://src/Levels/GameOver.tscn")
 
 func display_problem():
 	display.set_text(str(num1, " * ", num2))

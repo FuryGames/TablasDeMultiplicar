@@ -1,17 +1,10 @@
 extends Node2D
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
-
 const CNIVELES = 5 #cantidad de niveles
 var niveles=[1,1,0,0,0]#1 para nivel desbloqueado, 0 para nivel bloqueado
 
 func _ready():
-	print("hola")
 	Check_completed_lvls()
-	# Called every time the node is added to the scene.
-	# Initialization here
 
 #Reinicia los niveles, como si empezara todo denuevo
 func Reset_lvls():
