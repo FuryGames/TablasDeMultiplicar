@@ -17,8 +17,8 @@ func _ready():
 	Global.current_level = 1
 	Global.current_correct = 0
 	Global.current_incorrect = 0
-	#Global.current_stay = 20
-	Global.current_stay = 2
+	Global.current_stay = 20
+	#Global.current_stay = 2
 
 	show_new_problem()
 	

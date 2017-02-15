@@ -3,11 +3,21 @@ extends Node2D
 var sonido_on = load("res://assets/images/buttons/sound-on.png")
 var sonido_off = load("res://assets/images/buttons/sound-off.png")
 
+var load_or_save_one_time = true
+
 func _ready():
 	if Global.sound_menu == false:
 		get_node("Sound").set_normal_texture(sonido_off)
 		get_node("Sound").set_pressed_texture(sonido_on)
 		get_node("SoundMenu").stop()
+		
+	if (load_or_save_one_time):
+		load_or_save_one_time = false
+		
+		if (GlobalSave.file_exist()):
+			GlobalSave.load_game()
+		else:
+			GlobalSave.save_game()
 	
 func _on_Start_pressed():
 	get_tree().change_scene("res://src/MainScreens/Levels.tscn")
