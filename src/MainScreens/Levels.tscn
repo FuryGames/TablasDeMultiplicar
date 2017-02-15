@@ -66,7 +66,7 @@ shortcut = null
 textures/normal = ExtResource( 3 )
 textures/pressed = ExtResource( 4 )
 
-[node name="Level1" type="TextureButton" parent="."]
+[node name="Level1" type="TextureButton" parent="." groups=[ "Levels" ]]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -83,7 +83,7 @@ textures/normal = ExtResource( 5 )
 textures/pressed = ExtResource( 6 )
 textures/disabled = ExtResource( 7 )
 
-[node name="Level2" type="TextureButton" parent="."]
+[node name="Level2" type="TextureButton" parent="." groups=[ "Levels" ]]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -93,6 +93,7 @@ margin/left = 318.0
 margin/top = 108.0
 margin/right = 473.0
 margin/bottom = 263.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -100,7 +101,7 @@ textures/normal = ExtResource( 8 )
 textures/pressed = ExtResource( 9 )
 textures/disabled = ExtResource( 10 )
 
-[node name="Level3" type="TextureButton" parent="."]
+[node name="Level3" type="TextureButton" parent="." groups=[ "Levels" ]]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -110,6 +111,7 @@ margin/left = 568.0
 margin/top = 108.0
 margin/right = 723.0
 margin/bottom = 263.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -117,7 +119,7 @@ textures/normal = ExtResource( 11 )
 textures/pressed = ExtResource( 12 )
 textures/disabled = ExtResource( 13 )
 
-[node name="Level4" type="TextureButton" parent="."]
+[node name="Level4" type="TextureButton" parent="." groups=[ "Levels" ]]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -127,6 +129,7 @@ margin/left = 820.0
 margin/top = 108.0
 margin/right = 975.0
 margin/bottom = 263.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -134,7 +137,7 @@ textures/normal = ExtResource( 14 )
 textures/pressed = ExtResource( 15 )
 textures/disabled = ExtResource( 16 )
 
-[node name="Level5" type="TextureButton" parent="."]
+[node name="Level5" type="TextureButton" parent="." groups=[ "Levels" ]]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -144,6 +147,7 @@ margin/left = 1058.0
 margin/top = 108.0
 margin/right = 1213.0
 margin/bottom = 263.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -151,7 +155,7 @@ textures/normal = ExtResource( 17 )
 textures/pressed = ExtResource( 18 )
 textures/disabled = ExtResource( 19 )
 
-[node name="Level6" type="TextureButton" parent="."]
+[node name="Level6" type="TextureButton" parent="." groups=[ "Levels" ]]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -161,6 +165,7 @@ margin/left = 68.0
 margin/top = 328.0
 margin/right = 223.0
 margin/bottom = 483.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -168,7 +173,7 @@ textures/normal = ExtResource( 20 )
 textures/pressed = ExtResource( 21 )
 textures/disabled = ExtResource( 22 )
 
-[node name="Level7" type="TextureButton" parent="."]
+[node name="Level7" type="TextureButton" parent="." groups=[ "Levels" ]]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -178,6 +183,7 @@ margin/left = 318.0
 margin/top = 328.0
 margin/right = 473.0
 margin/bottom = 483.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -185,7 +191,7 @@ textures/normal = ExtResource( 23 )
 textures/pressed = ExtResource( 24 )
 textures/disabled = ExtResource( 25 )
 
-[node name="Level8" type="TextureButton" parent="."]
+[node name="Level8" type="TextureButton" parent="." groups=[ "Levels" ]]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -195,6 +201,7 @@ margin/left = 566.0
 margin/top = 328.0
 margin/right = 721.0
 margin/bottom = 483.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -202,7 +209,7 @@ textures/normal = ExtResource( 26 )
 textures/pressed = ExtResource( 27 )
 textures/disabled = ExtResource( 28 )
 
-[node name="Level9" type="TextureButton" parent="."]
+[node name="Level9" type="TextureButton" parent="." groups=[ "Levels" ]]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -212,6 +219,7 @@ margin/left = 818.0
 margin/top = 328.0
 margin/right = 973.0
 margin/bottom = 483.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null

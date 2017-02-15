@@ -48,13 +48,13 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 10.0
-margin/top = -634.763
+margin/top = -5.0
 margin/right = 1290.0
-margin/bottom = 87.2368
+margin/bottom = 717.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0.960938, 0.478357, 0.0525513, 1 )
 bbcode/enabled = true
-bbcode/bbcode = "[center]\n[color=red]PROGRAMADORES[/color]\nAntonio J. Lopez\nDiego Valencia\nMatías Muñoz Espinoza\n\n[color=red]DISEÑADORES[/color]\nFelipe Conejeros\n\n[color=red]MÚSICA[/color]\n[/center]"
+bbcode/bbcode = "[center]\n[color=red]PROGRAMADORES[/color]\nAntonio J. Lopez\nDiego Valencia\nJuan Figueroa\nMatías Muñoz Espinoza\n\n[color=red]DISEÑADORES[/color]\nFelipe Conejeros\n[/center]"
 visible_characters = -1
 
 [node name="anim" type="AnimationPlayer" parent="."]
@@ -74,10 +74,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 1100.0
-margin/top = 540.0
-margin/right = 1255.0
-margin/bottom = 695.0
+margin/left = 1110.0
+margin/top = 730.0
+margin/right = 1265.0
+margin/bottom = 885.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null

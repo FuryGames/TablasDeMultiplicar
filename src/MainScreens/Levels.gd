@@ -1,5 +1,18 @@
 extends Node2D
 
+func _ready():
+	activate_levels()
+	
+func activate_levels():
+	var levels = get_tree().get_nodes_in_group("Levels")
+	var count = 0
+	
+	for i in levels:
+		count += 1
+		i.set_disabled(false)
+		if count == GlobalSave.all_data["MaxLevel"]:
+			break
+
 func _on_Back_pressed():
 	get_tree().change_scene("res://src/MainScreens/Menu.tscn")
 
