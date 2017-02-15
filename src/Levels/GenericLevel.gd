@@ -20,7 +20,7 @@ func set_table(table):
 	num1 = table
 
 func new_problem():
-	while past_result == num2:
+	while past_result == num2*num1: # Multiplico num2*num1 para que entre e el while
 		num2 = round(randf() * 10)
 	result = num1 * num2
 	past_result = result
@@ -45,6 +45,9 @@ func generate_answers():
 	
 	for i in opts:
 		if (i == null):
+			if falt[index_falt] < 0:
+				print(falt[index_falt])
+				falt[index_falt] = falt[index_falt]*-1 #Quitar los numeros negativos en las opciones
 			opts[index_num] = falt[index_falt]
 			index_falt += 1
 		index_num += 1
