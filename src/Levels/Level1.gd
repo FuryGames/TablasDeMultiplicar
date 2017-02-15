@@ -13,7 +13,7 @@ var end_level_one_time = true
 var game_over_one_time = true
 
 func _ready():
-	set_table(1) # setiar la tabla del 1}
+	set_table(Global.num_table) # setiar la tabla del 1}
 	Global.current_level = 1
 	Global.current_correct = 0
 	Global.current_incorrect = 0

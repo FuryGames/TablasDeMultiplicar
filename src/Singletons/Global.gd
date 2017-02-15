@@ -6,6 +6,8 @@ var current_correct = 0
 var current_incorrect = 0
 var current_stay = 0
 
+var num_table = 1
+
 var sound_menu = true
 
 var opt1_pressed = false
