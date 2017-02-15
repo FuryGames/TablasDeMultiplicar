@@ -162,6 +162,8 @@ autoplay = "show"
 
 [connection signal="pressed" from="Resume" to="." method="_on_Resume_pressed"]
 
+[connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]
+
 [connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]
 
 

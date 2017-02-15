@@ -37,4 +37,5 @@ func _on_Level8_pressed():
 
 func _on_Level9_pressed():
 	Global.num_table = 9	
+	Global.next_disabled = true
 	get_tree().change_scene("res://src/Levels/Level1.tscn")

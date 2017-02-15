@@ -8,6 +8,8 @@ var current_stay = 0
 
 var num_table = 1
 
+var next_disabled = false
+
 var sound_menu = true
 
 var opt1_pressed = false
