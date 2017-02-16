@@ -1,8 +1,10 @@
 extends Node
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+var num1 = 0
+var num2 = 0
+var result = 0
+
+
 
 func _ready():
 	#print(Global.num_table)

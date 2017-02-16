@@ -9,7 +9,7 @@ func _ready():
 	
 	if Global.next_disabled != false:
 		get_node("Next").set_opacity(0.0)
-
+		
 	if Global.num_table == GlobalSave.all_data["MaxLevel"]:
 		GlobalSave.all_data["MaxLevel"] += 1
 
@@ -26,7 +26,6 @@ func _on_Next_pressed():
 
 	Global.num_table=Global.num_table+1
 	if Global.num_table > 9:
-		#get_node("Next").set_opacity(0.0)
 		
 		
 		get_node("Next").set_disabled(true)

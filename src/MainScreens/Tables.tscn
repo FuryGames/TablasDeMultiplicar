@@ -263,8 +263,22 @@ autoplay = "botones 2"
 
 [connection signal="pressed" from="Tabla2" to="." method="_on_Tabla2_pressed"]
 
-[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]
+[connection signal="pressed" from="Tabla3" to="." method="_on_Tabla3_pressed"]
+
+[connection signal="pressed" from="Tabla4" to="." method="_on_Tabla4_pressed"]
+
+[connection signal="pressed" from="Tabla5" to="." method="_on_Tabla5_pressed"]
+
+[connection signal="pressed" from="Tabla6" to="." method="_on_Tabla6_pressed"]
+
+[connection signal="pressed" from="Tabla7" to="." method="_on_Tabla7_pressed"]
+
+[connection signal="pressed" from="Tabla8" to="." method="_on_Tabla8_pressed"]
+
+[connection signal="pressed" from="Tabla9" to="." method="_on_Tabla9_pressed"]
 
 [connection signal="pressed" from="volver" to="MenuBackground" method="_on_volver_pressed"]
+
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]
 
 
