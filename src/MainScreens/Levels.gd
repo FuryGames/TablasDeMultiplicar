@@ -1,5 +1,7 @@
 extends Node2D
 
+export (int) var hola = 1
+
 func _ready():
 	activate_levels()
 	

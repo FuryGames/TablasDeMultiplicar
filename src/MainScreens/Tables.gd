@@ -46,4 +46,4 @@ func _on_Tabla9_pressed():
 	new_view()
 
 func new_view():
-	get_tree().change_scene("res://src/Tables/tabla.tscn")
+	get_tree().change_scene("res://src/Tables/Tabla.tscn")

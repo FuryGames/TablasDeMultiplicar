@@ -16,7 +16,6 @@ func create_data():
 
 # Guarda el archivo
 func save_game():
-	print("save_game")
 	var savegame = File.new()
 	
 	if (!savegame.file_exists(fpath)):
@@ -31,7 +30,6 @@ func save_game():
 	
 # Carga el archivo
 func load_game():
-	print("load game")
 	is_loaded = true
 	
 	# Instancia el fichero
