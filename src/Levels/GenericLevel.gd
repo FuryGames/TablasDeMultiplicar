@@ -27,17 +27,22 @@ func new_problem():
 
 func generate_answers():
 	# Definir el rango de de las falsas alternativas (falt)
-	falt[0] = int(rand_range(result - NEARNESS, result + NEARNESS + 1))
-	falt[1] = int(rand_range(result - NEARNESS, result + NEARNESS + 1))
+	
+	#falt[0] = int(rand_range(result - NEARNESS, result + NEARNESS + 1))
+	falt[0] = num_rand(0, 1)
+	falt[1] = num_rand(1, 1)
+	#falt[1] = int(rand_range(result - NEARNESS, result + NEARNESS + 1))
 	
 	while (falt[0] == result):
-		falt[0] = int(rand_range(result - NEARNESS, result + NEARNESS + 1))
+		#falt[0] = int(rand_range(result - NEARNESS, result + NEARNESS + 1))
+		falt[0] = num_rand(0, 1)
 	while (falt[1] == result || falt[1] == falt[0]):
-		falt[1] = int(rand_range(result - NEARNESS, result + NEARNESS + 1))
+		#falt[1] = int(rand_range(result - NEARNESS, result + NEARNESS + 1))
+		falt[1] = num_rand(1, 1)
 	
 	opts = [null, null, null]
 	var opt_correct = int(rand_range(0, 3))
-
+	
 	opts[opt_correct] = result
 	
 	var index_falt = 0
@@ -45,12 +50,17 @@ func generate_answers():
 	
 	for i in opts:
 		if (i == null):
-			if falt[index_falt] < 0:
-				print(falt[index_falt])
-				falt[index_falt] = falt[index_falt]*-1 #Quitar los numeros negativos en las opciones
+			#if falt[index_falt] < 0:
+				#print(falt[index_falt])
+				#falt[index_falt] = falt[index_falt]*-1 #Quitar los numeros negativos en las opciones
 			opts[index_num] = falt[index_falt]
 			index_falt += 1
 		index_num += 1
+		
+		if (opts[0] == opts[1]):
+			pass
+			# or (opts[0] == opts[2]) or (opts[1] == opts[2]):
+			
 
 func evaluate_result(opt):
 	if opt == result:
@@ -59,3 +69,11 @@ func evaluate_result(opt):
 		Global.current_incorrect += 1
 	Global.current_stay -= 1
 	Global.reset_opt()
+	
+	
+func num_rand(num, c):
+	var n = int(rand_range(result - NEARNESS, result + NEARNESS + 1))
+	if n < 0:
+		n = n*-1
+		print(str(num)," es negativo ", n)
+	return n
