@@ -3,13 +3,15 @@ extends Node2D
 var sonido_on = load("res://assets/images/buttons/sound-on.png")
 var sonido_off = load("res://assets/images/buttons/sound-off.png")
 
+onready var menu_music = GlobalMusic.get_node("Carnivalrides")
+onready var game_music = GlobalMusic.get_node("Green_Hills")
+
 var load_or_save_one_time = true
 
 func _ready():
-	if Global.sound_menu == false:
+	if Global.music == false:
 		get_node("Sound").set_normal_texture(sonido_off)
 		get_node("Sound").set_pressed_texture(sonido_on)
-		get_node("SoundMenu").stop()
 		
 	if (load_or_save_one_time):
 		load_or_save_one_time = false
@@ -33,13 +35,14 @@ func _on_Tables_pressed():
 
 func _on_Sound_pressed():
 	
-	if Global.sound_menu:
+	if Global.music:
 		get_node("Sound").set_normal_texture(sonido_off)
 		get_node("Sound").set_pressed_texture(sonido_on)
-		get_node("SoundMenu").stop()
-		Global.sound_menu = false
+		Global.music = false
+		menu_music.stop()
+		game_music.stop()
 	else:
-		get_node("SoundMenu").play()
+		menu_music.play()
 		get_node("Sound").set_normal_texture(sonido_on)
 		get_node("Sound").set_pressed_texture(sonido_off)
-		Global.sound_menu = true
+		Global.music = true

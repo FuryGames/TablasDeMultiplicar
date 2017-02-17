@@ -1,7 +1,12 @@
 extends Node2D
 
+onready var game_music = GlobalMusic.get_node("Green_Hills")
+onready var menu_music = GlobalMusic.get_node("Carnivalrides")
+
 func _ready():
-	pass
+	if Global.music:
+		menu_music.stop()
+		game_music.play()
 
 func _on_ExitLevel_pressed():
 	get_tree().change_scene("res://src/MainScreens/Levels.tscn")

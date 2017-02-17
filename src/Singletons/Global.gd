@@ -10,7 +10,7 @@ var num_table = 1
 
 var next_disabled = false
 
-var sound_menu = true
+var music = true
 
 var opt1_pressed = false
 var opt2_pressed = false
