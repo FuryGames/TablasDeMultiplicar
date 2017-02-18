@@ -1,5 +1,8 @@
 extends Node
 
+onready var win_sound = GlobalMusic.get_node("Win")
+onready var lose_sound = GlobalMusic.get_node("Lose")
+
 var num1 = 0
 var num2 = 0
 var result = 0
@@ -65,8 +68,10 @@ func generate_answers():
 func evaluate_result(opt):
 	if opt == result:
 		Global.current_correct += 1
+		win_sound.play()
 	else:
 		Global.current_incorrect += 1
+		lose_sound.play()
 	Global.current_stay -= 1
 	Global.reset_opt()
 	
