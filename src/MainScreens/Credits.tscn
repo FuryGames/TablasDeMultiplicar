@@ -54,7 +54,7 @@ margin/bottom = 717.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0.960938, 0.478357, 0.0525513, 1 )
 bbcode/enabled = true
-bbcode/bbcode = "[center]\n[color=red]PROGRAMADORES[/color]\nAntonio J. Lopez\nDiego Valencia\nJuan Figueroa\nMatías Muñoz Espinoza\n\n[color=red]DISEÑADORES[/color]\nFelipe Conejeros\n[/center]"
+bbcode/bbcode = "[center]\n[color=red]PROGRAMADORES[/color]\nAntonio J. Lopez\nDiego Valencia\nJuan Figueroa\nMatías Muñoz Espinoza\n\n[color=red]DISEÑADORES[/color]\nHecktor Peña (Logo FuryGames)\n[/center]"
 visible_characters = -1
 
 [node name="anim" type="AnimationPlayer" parent="."]
